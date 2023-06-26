@@ -4,8 +4,7 @@ const path = require('node:path')
 const { parse } = require('yaml')
 const ics = require('ics')
 
-;
-(async () => {
+;(async () => {
   const [inputFilePath] = process.argv.slice(2)
 
   const todoFile = await readFile(inputFilePath).then((buffer) => buffer.toString())
