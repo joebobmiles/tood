@@ -6,7 +6,9 @@
   "bin": {
     "tood": "todo.js"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "pkg ."
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -40,7 +42,16 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm",
-      "@semantic-release/github",
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            { "path": "dist/tood-linux", "label": "Linux executable" },
+            { "path": "dist/tood-macos", "label": "MacOS executable" },
+            { "path": "dist/tood-win.exe", "label": "Windows executable" }
+          ]
+        }
+      ],
       [
         "@semantic-release/git",
         {
