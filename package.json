@@ -17,6 +17,7 @@
     "yaml": "^2.3.1"
   },
   "devDependencies": {
+    "@semantic-release/git": "^10.0.1",
     "pkg": "^5.8.1",
     "semantic-release": "^21.0.5",
     "standard": "^17.1.0"
@@ -46,9 +47,18 @@
         "@semantic-release/github",
         {
           "assets": [
-            { "path": "dist/tood-linux", "label": "Linux executable" },
-            { "path": "dist/tood-macos", "label": "MacOS executable" },
-            { "path": "dist/tood-win.exe", "label": "Windows executable" }
+            {
+              "path": "dist/tood-linux",
+              "label": "Linux executable"
+            },
+            {
+              "path": "dist/tood-macos",
+              "label": "MacOS executable"
+            },
+            {
+              "path": "dist/tood-win.exe",
+              "label": "Windows executable"
+            }
           ]
         }
       ],
