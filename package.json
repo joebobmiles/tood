@@ -1,6 +1,6 @@
 {
   "name": "tood",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A tool for converting a todo list into calendar events.",
   "main": "todo.js",
   "bin": {
